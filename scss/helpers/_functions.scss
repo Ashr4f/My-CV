@@ -1,0 +1,9 @@
+$baseFontSize : 16;
+
+@function rem($pixels, $context: $baseFontSize) {
+    @return #{$pixels/$context}rem;
+}
+
+@function em($pixels, $context: $baseFontSize) {
+    @return #{$pixels/$context}em;
+}
