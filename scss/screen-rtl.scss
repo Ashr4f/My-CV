@@ -1,7 +1,0 @@
-$dir: rtl;
-
-@import "screen.scss";
-
-html {
-    direction: if-rtl(rtl);
-}
