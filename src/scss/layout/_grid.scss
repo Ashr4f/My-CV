@@ -1,69 +1,70 @@
 *,
 ::after,
 ::before {
-    @include prefixer(box-sizing, border-box, webkit moz);
+  @include prefixer(box-sizing, border-box, webkit moz);
 }
 
 .container {
-    position: relative;
-    display: block;
-    max-width: $container-max-width;
-    margin: 0 auto;
+  position: relative;
+  display: block;
+  max-width: $container-max-width;
+  margin: 0 auto;
+  padding: 0 1rem;
 
-    &.semi-full {
-        max-width: $container-semi-full-max-width;
-    }
+  &.semi-fluid {
+    max-width: $semi-fluid-container-max-width;
+  }
 }
 
 .container-fluid {
-    position: relative;
-    display: block;
+  position: relative;
+  display: block;
 }
 
 .row {
-    position: relative;
-    @include clearfix();
+  position: relative;
+  @include clearfix();
 }
 
 @for $i from 1 through $grid-cols-count {
-    .col-#{$i} {
-        float: $left;
-        width: (100% / ($grid-cols-count / $i));
-    }
+  .col-#{$i} {
+    float: $left;
+    width: (100% / ($grid-cols-count / $i));
+  }
 }
 
 @include breakpoint(xs) {
-    @for $i from 1 through $grid-cols-count {
-        .col-xs-#{$i} {
-            float: $left;
-            width: (100% / ($grid-cols-count / $i));
-        }
+  @for $i from 1 through $grid-cols-count {
+    .col-xs-#{$i} {
+      float: $left;
+      width: (100% / ($grid-cols-count / $i));
     }
+  }
 }
 
 @include breakpoint(sm) {
-    @for $i from 1 through $grid-cols-count {
-        .col-sm-#{$i} {
-            float: $left;
-            width: (100% / ($grid-cols-count / $i));
-        }
+  @for $i from 1 through $grid-cols-count {
+    .col-sm-#{$i} {
+      float: $left;
+      width: (100% / ($grid-cols-count / $i));
     }
+  }
 }
 
 @include breakpoint(md) {
-    @for $i from 1 through $grid-cols-count {
-        .col-md-#{$i} {
-            float: $left;
-            width: (100% / ($grid-cols-count / $i));
-        }
+  @for $i from 1 through $grid-cols-count {
+    .col-md-#{$i} {
+      float: $left;
+      width: (100% / ($grid-cols-count / $i));
     }
+  }
 }
 
 @include breakpoint(lg) {
-    @for $i from 1 through $grid-cols-count {
-        .col-lg-#{$i} {
-            float: $left;
-            width: (100% / ($grid-cols-count / $i));
-        }
+  @for $i from 1 through $grid-cols-count {
+    .col-lg-#{$i} {
+      float: $left;
+      width: (100% / ($grid-cols-count / $i));
     }
+  }
 }

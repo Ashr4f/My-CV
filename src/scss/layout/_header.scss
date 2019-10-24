@@ -1,0 +1,35 @@
+.header-container {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  border-bottom: 1px solid rgba($black, 0.15);
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    .header-logo {
+      a {
+        padding: 1rem;
+      }
+    }
+    nav {
+      ul {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        li {
+          a {
+            padding: 1rem;
+            &.active {
+              color: $main-theme-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
