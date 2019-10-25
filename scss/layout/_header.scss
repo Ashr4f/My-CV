@@ -1,44 +1,43 @@
 .page-header-theme {
-    position: relative;
-    display: block;
-    height: rem(40);
-    background-color: $theme-color;
-    animation: dynamic-theme-color 100s linear infinite;
+  position: relative;
+  display: block;
+  height: rem(40);
+  background-color: $theme-color;
+  animation: dynamic-theme-color 100s linear infinite;
 }
 
 .title-container {
-    position: relative;
-    text-align: center;
-    margin-top: rem(50);
-    padding-bottom: rem(64);
-    border-bottom: rem(4) solid rgba(0, 0, 0, 0.5);
+  position: relative;
+  text-align: center;
+  margin-top: rem(50);
+  padding-bottom: rem(64);
+  border-bottom: rem(4) solid rgba(0, 0, 0, 0.5);
+
+  font: {
+    family: $mainFont_ExtraLight;
+  }
+
+  .name {
+    text-transform: uppercase;
 
     font: {
-        family: $mainFont_ExtraLight;
+      size: rem(64);
     }
 
-
-    .name {
-        text-transform: uppercase;
-
-        font: {
-            size: rem(64);
-        }
-
-        @include breakpoint(xs) {
-            font-size: rem(48);
-        }
+    @include breakpoint(xs) {
+      font-size: rem(48);
     }
+  }
 
-    .profession {
-        margin-top: rem(20);
-        text-transform: uppercase;
-        color: rgba($theme-color, 0.7);
-        animation: dynamic-theme-font-color 100s linear infinite;
+  .profession {
+    margin-top: rem(20);
+    text-transform: uppercase;
+    color: rgba($theme-color, 0.7);
+    animation: dynamic-theme-font-color 100s linear infinite;
 
-        font: {
-            family: $mainFont_SemiBold;
-            size: rem(18);
-        }
+    font: {
+      family: $mainFont_SemiBold;
+      size: rem(22);
     }
+  }
 }
