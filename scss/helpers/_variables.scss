@@ -2,11 +2,13 @@ $grid-cols-count: 18;
 
 $screen-xs-max: 768px; //ExtraSmall Devices Max Width
 $screen-sm-max: 991px; //Small Devices Max Width
-$screen-md-max: 1200px; //Medium Devices Max 
+$screen-md-max: 1200px; //Medium Devices Max
 
-$breakpoints: (sm: $screen-xs-max,
-    md: $screen-sm-max,
-    lg: $screen-md-max);
+$breakpoints: (
+  sm: $screen-xs-max,
+  md: $screen-sm-max,
+  lg: $screen-md-max
+);
 
 // main variables
 
@@ -21,3 +23,9 @@ $mainFont: "Montserrat_Regular";
 $main-background-color: #f5f6fa;
 $main-font-color: #2f3640;
 $theme-color: #38ada9;
+
+$prgm-languages: (
+  html: #404145,
+  css: #ecaf2d,
+  js: #5ad864
+);

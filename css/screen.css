@@ -770,7 +770,7 @@ html {
 }
 @media screen and (min-width: 768px) and (min-width: 768px) {
   html {
-    font-size: calc(14px + 2 * ((100vw - 768px) / 457));
+    font-size: calc( 14px + 2 * ((100vw - 768px) / 457) );
   }
 }
 @media screen and (min-width: 768px) and (min-width: 1225px) {
@@ -785,7 +785,7 @@ html {
 }
 @media screen and (max-width: 768px) and (min-width: 1px) {
   html {
-    font-size: calc(12px + 4 * ((100vw - 1px) / 767));
+    font-size: calc( 12px + 4 * ((100vw - 1px) / 767) );
   }
 }
 @media screen and (max-width: 768px) and (min-width: 768px) {
@@ -926,6 +926,15 @@ a.light {
 .box-content .skills-container {
   position: relative;
   padding-bottom: 3.75rem;
+}
+.box-content .lang-html {
+  color: #404145;
+}
+.box-content .lang-css {
+  color: #ecaf2d;
+}
+.box-content .lang-js {
+  color: #5ad864;
 }
 .box-content .history-container {
   position: relative;

@@ -48,6 +48,10 @@
     padding-bottom: rem(60);
   }
 
+  .lang {
+    @include prgm-languages-colors();
+  }
+
   .history-container {
     position: relative;
     padding-bottom: rem(28);
