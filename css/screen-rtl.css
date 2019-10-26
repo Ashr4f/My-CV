@@ -8,214 +8,340 @@
   clear: both;
 }
 
-@-webkit-keyframes dynamic-theme-color {
+@-webkit-keyframes dynamic-background-color {
   0% {
-    background-color: #38ada9;
+    background-color: #8993be;
   }
-  10% {
-    background-color: #2ecc71;
+  5.8823529412% {
+    background-color: #e34f26;
   }
-  20% {
-    background-color: #8e44ad;
+  11.7647058824% {
+    background-color: #2965f1;
   }
-  30% {
-    background-color: #e67e22;
+  17.6470588235% {
+    background-color: #cc6699;
   }
-  40% {
-    background-color: #e74c3c;
+  23.5294117647% {
+    background-color: #a86454;
   }
-  50% {
-    background-color: #3498db;
+  29.4117647059% {
+    background-color: #f0db4f;
   }
-  60% {
-    background-color: #f7b731;
+  35.2941176471% {
+    background-color: #61dafb;
   }
-  70% {
-    background-color: #474787;
+  41.1764705882% {
+    background-color: #dd1b16;
   }
-  80% {
-    background-color: #ff793f;
+  47.0588235294% {
+    background-color: #42b883;
   }
-  90% {
-    background-color: #54a0ff;
+  52.9411764706% {
+    background-color: #0769ad;
+  }
+  58.8235294118% {
+    background-color: #f1502f;
+  }
+  64.7058823529% {
+    background-color: #211f1f;
+  }
+  70.5882352941% {
+    background-color: #db4446;
+  }
+  76.4705882353% {
+    background-color: #1c78c0;
+  }
+  82.3529411765% {
+    background-color: #21374b;
+  }
+  88.2352941176% {
+    background-color: #21759b;
+  }
+  94.1176470588% {
+    background-color: #fb503b;
   }
   100% {
-    background-color: #38ada9;
+    background-color: #8993be;
   }
 }
-@-moz-keyframes dynamic-theme-color {
+@-moz-keyframes dynamic-background-color {
   0% {
-    background-color: #38ada9;
+    background-color: #8993be;
   }
-  10% {
-    background-color: #2ecc71;
+  5.8823529412% {
+    background-color: #e34f26;
   }
-  20% {
-    background-color: #8e44ad;
+  11.7647058824% {
+    background-color: #2965f1;
   }
-  30% {
-    background-color: #e67e22;
+  17.6470588235% {
+    background-color: #cc6699;
   }
-  40% {
-    background-color: #e74c3c;
+  23.5294117647% {
+    background-color: #a86454;
   }
-  50% {
-    background-color: #3498db;
+  29.4117647059% {
+    background-color: #f0db4f;
   }
-  60% {
-    background-color: #f7b731;
+  35.2941176471% {
+    background-color: #61dafb;
   }
-  70% {
-    background-color: #474787;
+  41.1764705882% {
+    background-color: #dd1b16;
   }
-  80% {
-    background-color: #ff793f;
+  47.0588235294% {
+    background-color: #42b883;
   }
-  90% {
-    background-color: #54a0ff;
+  52.9411764706% {
+    background-color: #0769ad;
+  }
+  58.8235294118% {
+    background-color: #f1502f;
+  }
+  64.7058823529% {
+    background-color: #211f1f;
+  }
+  70.5882352941% {
+    background-color: #db4446;
+  }
+  76.4705882353% {
+    background-color: #1c78c0;
+  }
+  82.3529411765% {
+    background-color: #21374b;
+  }
+  88.2352941176% {
+    background-color: #21759b;
+  }
+  94.1176470588% {
+    background-color: #fb503b;
   }
   100% {
-    background-color: #38ada9;
+    background-color: #8993be;
   }
 }
-@keyframes dynamic-theme-color {
+@keyframes dynamic-background-color {
   0% {
-    background-color: #38ada9;
+    background-color: #8993be;
   }
-  10% {
-    background-color: #2ecc71;
+  5.8823529412% {
+    background-color: #e34f26;
   }
-  20% {
-    background-color: #8e44ad;
+  11.7647058824% {
+    background-color: #2965f1;
   }
-  30% {
-    background-color: #e67e22;
+  17.6470588235% {
+    background-color: #cc6699;
   }
-  40% {
-    background-color: #e74c3c;
+  23.5294117647% {
+    background-color: #a86454;
   }
-  50% {
-    background-color: #3498db;
+  29.4117647059% {
+    background-color: #f0db4f;
   }
-  60% {
-    background-color: #f7b731;
+  35.2941176471% {
+    background-color: #61dafb;
   }
-  70% {
-    background-color: #474787;
+  41.1764705882% {
+    background-color: #dd1b16;
   }
-  80% {
-    background-color: #ff793f;
+  47.0588235294% {
+    background-color: #42b883;
   }
-  90% {
-    background-color: #54a0ff;
+  52.9411764706% {
+    background-color: #0769ad;
+  }
+  58.8235294118% {
+    background-color: #f1502f;
+  }
+  64.7058823529% {
+    background-color: #211f1f;
+  }
+  70.5882352941% {
+    background-color: #db4446;
+  }
+  76.4705882353% {
+    background-color: #1c78c0;
+  }
+  82.3529411765% {
+    background-color: #21374b;
+  }
+  88.2352941176% {
+    background-color: #21759b;
+  }
+  94.1176470588% {
+    background-color: #fb503b;
   }
   100% {
-    background-color: #38ada9;
+    background-color: #8993be;
   }
 }
-@-webkit-keyframes dynamic-theme-font-color {
+@-webkit-keyframes dynamic-font-color {
   0% {
-    color: #38ada9;
+    color: #8993be;
   }
-  10% {
-    color: #2ecc71;
+  5.8823529412% {
+    color: #e34f26;
   }
-  20% {
-    color: #8e44ad;
+  11.7647058824% {
+    color: #2965f1;
   }
-  30% {
-    color: #e67e22;
+  17.6470588235% {
+    color: #cc6699;
   }
-  40% {
-    color: #e74c3c;
+  23.5294117647% {
+    color: #a86454;
   }
-  50% {
-    color: #3498db;
+  29.4117647059% {
+    color: #f0db4f;
   }
-  60% {
-    color: #f7b731;
+  35.2941176471% {
+    color: #61dafb;
   }
-  70% {
-    color: #474787;
+  41.1764705882% {
+    color: #dd1b16;
   }
-  80% {
-    color: #ff793f;
+  47.0588235294% {
+    color: #42b883;
   }
-  90% {
-    color: #54a0ff;
+  52.9411764706% {
+    color: #0769ad;
+  }
+  58.8235294118% {
+    color: #f1502f;
+  }
+  64.7058823529% {
+    color: #211f1f;
+  }
+  70.5882352941% {
+    color: #db4446;
+  }
+  76.4705882353% {
+    color: #1c78c0;
+  }
+  82.3529411765% {
+    color: #21374b;
+  }
+  88.2352941176% {
+    color: #21759b;
+  }
+  94.1176470588% {
+    color: #fb503b;
   }
   100% {
-    color: #38ada9;
+    color: #8993be;
   }
 }
-@-moz-keyframes dynamic-theme-font-color {
+@-moz-keyframes dynamic-font-color {
   0% {
-    color: #38ada9;
+    color: #8993be;
   }
-  10% {
-    color: #2ecc71;
+  5.8823529412% {
+    color: #e34f26;
   }
-  20% {
-    color: #8e44ad;
+  11.7647058824% {
+    color: #2965f1;
   }
-  30% {
-    color: #e67e22;
+  17.6470588235% {
+    color: #cc6699;
   }
-  40% {
-    color: #e74c3c;
+  23.5294117647% {
+    color: #a86454;
   }
-  50% {
-    color: #3498db;
+  29.4117647059% {
+    color: #f0db4f;
   }
-  60% {
-    color: #f7b731;
+  35.2941176471% {
+    color: #61dafb;
   }
-  70% {
-    color: #474787;
+  41.1764705882% {
+    color: #dd1b16;
   }
-  80% {
-    color: #ff793f;
+  47.0588235294% {
+    color: #42b883;
   }
-  90% {
-    color: #54a0ff;
+  52.9411764706% {
+    color: #0769ad;
+  }
+  58.8235294118% {
+    color: #f1502f;
+  }
+  64.7058823529% {
+    color: #211f1f;
+  }
+  70.5882352941% {
+    color: #db4446;
+  }
+  76.4705882353% {
+    color: #1c78c0;
+  }
+  82.3529411765% {
+    color: #21374b;
+  }
+  88.2352941176% {
+    color: #21759b;
+  }
+  94.1176470588% {
+    color: #fb503b;
   }
   100% {
-    color: #38ada9;
+    color: #8993be;
   }
 }
-@keyframes dynamic-theme-font-color {
+@keyframes dynamic-font-color {
   0% {
-    color: #38ada9;
+    color: #8993be;
   }
-  10% {
-    color: #2ecc71;
+  5.8823529412% {
+    color: #e34f26;
   }
-  20% {
-    color: #8e44ad;
+  11.7647058824% {
+    color: #2965f1;
   }
-  30% {
-    color: #e67e22;
+  17.6470588235% {
+    color: #cc6699;
   }
-  40% {
-    color: #e74c3c;
+  23.5294117647% {
+    color: #a86454;
   }
-  50% {
-    color: #3498db;
+  29.4117647059% {
+    color: #f0db4f;
   }
-  60% {
-    color: #f7b731;
+  35.2941176471% {
+    color: #61dafb;
   }
-  70% {
-    color: #474787;
+  41.1764705882% {
+    color: #dd1b16;
   }
-  80% {
-    color: #ff793f;
+  47.0588235294% {
+    color: #42b883;
   }
-  90% {
-    color: #54a0ff;
+  52.9411764706% {
+    color: #0769ad;
+  }
+  58.8235294118% {
+    color: #f1502f;
+  }
+  64.7058823529% {
+    color: #211f1f;
+  }
+  70.5882352941% {
+    color: #db4446;
+  }
+  76.4705882353% {
+    color: #1c78c0;
+  }
+  82.3529411765% {
+    color: #21374b;
+  }
+  88.2352941176% {
+    color: #21759b;
+  }
+  94.1176470588% {
+    color: #fb503b;
   }
   100% {
-    color: #38ada9;
+    color: #8993be;
   }
 }
 *,
@@ -701,7 +827,7 @@
   display: block;
   height: 2.5rem;
   background-color: #38ada9;
-  animation: dynamic-theme-color 100s linear infinite;
+  animation: dynamic-background-color 100s linear infinite;
 }
 
 .title-container {
@@ -725,7 +851,7 @@
   margin-top: 1.25rem;
   text-transform: uppercase;
   color: rgba(56, 173, 169, 0.7);
-  animation: dynamic-theme-font-color 100s linear infinite;
+  animation: dynamic-font-color 100s linear infinite;
   font-family: "Montserrat_SemiBold";
   font-size: 1.375rem;
 }
@@ -770,7 +896,7 @@ html {
 }
 @media screen and (min-width: 768px) and (min-width: 768px) {
   html {
-    font-size: calc( 14px + 2 * ((100vw - 768px) / 457) );
+    font-size: calc(14px + 2 * ((100vw - 768px) / 457));
   }
 }
 @media screen and (min-width: 768px) and (min-width: 1225px) {
@@ -785,7 +911,7 @@ html {
 }
 @media screen and (max-width: 768px) and (min-width: 1px) {
   html {
-    font-size: calc( 12px + 4 * ((100vw - 1px) / 767) );
+    font-size: calc(12px + 4 * ((100vw - 1px) / 767));
   }
 }
 @media screen and (max-width: 768px) and (min-width: 768px) {
@@ -927,14 +1053,59 @@ a.light {
   position: relative;
   padding-bottom: 3.75rem;
 }
+.box-content .programming {
+  font-weight: 600;
+}
 .box-content .lang-html {
-  color: #404145;
+  color: #e34f26;
 }
 .box-content .lang-css {
-  color: #ecaf2d;
+  color: #2965f1;
 }
-.box-content .lang-js {
-  color: #5ad864;
+.box-content .lang-scss {
+  color: #cc6699;
+}
+.box-content .lang-pugjs {
+  color: #a86454;
+}
+.box-content .lang-javascript {
+  color: #f0db4f;
+}
+.box-content .lang-react {
+  color: #61dafb;
+}
+.box-content .lang-angular {
+  color: #dd1b16;
+}
+.box-content .lang-vuejs {
+  color: #42b883;
+}
+.box-content .lang-jquery {
+  color: #0769ad;
+}
+.box-content .lang-git {
+  color: #f1502f;
+}
+.box-content .lang-github {
+  color: #211f1f;
+}
+.box-content .lang-gulpjs {
+  color: #db4446;
+}
+.box-content .lang-webpack {
+  color: #1c78c0;
+}
+.box-content .lang-parcel {
+  color: #21374b;
+}
+.box-content .lang-wordpress {
+  color: #21759b;
+}
+.box-content .lang-laravel {
+  color: #fb503b;
+}
+.box-content .lang-php {
+  color: #8993be;
 }
 .box-content .history-container {
   position: relative;

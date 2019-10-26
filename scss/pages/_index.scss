@@ -48,8 +48,12 @@
     padding-bottom: rem(60);
   }
 
+  .programming {
+    font-weight: 600;
+  }
+
   .lang {
-    @include prgm-languages-colors();
+    @include prgm-languages-colors-classes();
   }
 
   .history-container {

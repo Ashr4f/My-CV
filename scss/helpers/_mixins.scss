@@ -1,7 +1,10 @@
 @mixin clearfix($extend: true) {
   @if $extend==true {
     @extend %clearfix;
-  } @else if $extend==false {
+  }
+
+  @else if $extend==false {
+
     &::before,
     &::after {
       content: "\0020";
@@ -64,15 +67,21 @@
     @media (min-width: $screen-md-max) {
       @content;
     }
-  } @else if $point==md {
+  }
+
+  @else if $point==md {
     @media (min-width: $screen-sm-max) and (max-width: $screen-md-max) {
       @content;
     }
-  } @else if $point==sm {
+  }
+
+  @else if $point==sm {
     @media (min-width: $screen-xs-max) and (max-width: $screen-sm-max) {
       @content;
     }
-  } @else if $point==xs {
+  }
+
+  @else if $point==xs {
     @media (max-width: $screen-xs-max) {
       @content;
     }
@@ -87,12 +96,14 @@
     @media (min-width: $lower-breakpoint) and (max-width: ($upper-breakpoint)) {
       @content;
     }
-  } @else {
-    @if (map-has-key($breakpoints, $lower) ==false) {
+  }
+
+  @else {
+    @if (map-has-key($breakpoints, $lower)==false) {
       @warn 'Your lower breakpoint was invalid: #{$lower}.';
     }
 
-    @if (map-has-key($breakpoints, $upper) ==false) {
+    @if (map-has-key($breakpoints, $upper)==false) {
       @warn 'Your upper breakpoint was invalid: #{$upper}.';
     }
   }
@@ -106,15 +117,21 @@
     border-top: $size solid transparent;
     border-bottom: $size solid transparent;
     border-#{$right}: $size solid $color;
-  } @else if ($direction==$right) {
+  }
+
+  @else if ($direction==$right) {
     border-top: $size solid transparent;
     border-bottom: $size solid transparent;
     border-#{$left}: $size solid $color;
-  } @else if ($direction==down) {
+  }
+
+  @else if ($direction==down) {
     border-#{$left}: $size solid transparent;
     border-#{$right}: $size solid transparent;
     border-top: $size solid $color;
-  } @else if ($direction==up) {
+  }
+
+  @else if ($direction==up) {
     border-#{$left}: $size solid transparent;
     border-#{$right}: $size solid transparent;
     border-bottom: $size solid $color;
@@ -127,23 +144,21 @@
   white-space: nowrap;
 }
 
-@mixin box-shadow(
-  $x: rem(0),
+@mixin box-shadow($x: rem(0),
   $y: rem(0),
   $blur: rem(0),
   $spread: rem(0),
   $color: rgba(0, 0, 0, 0.5),
-  $inset: false
-) {
+  $inset: false) {
   // MAIN BOX SHADOW VARS, CHANGE THEM WHEN INCLUDE IF NECESSARY
 
   @if $inset==true {
-    @include prefixer(
-      box-shadow,
+    @include prefixer(box-shadow,
       inset $x $y $blur $spread $color,
-      webkit moz ms
-    );
-  } @else {
+      webkit moz ms);
+  }
+
+  @else {
     @include prefixer(box-shadow, $x $y $blur $spread $color, webkit moz ms);
   }
 }
@@ -165,10 +180,7 @@
       font-size: $min-font-size;
 
       @media screen and (min-width: $min-vw) {
-        font-size: calc(
-          #{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} *
-            ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)})
-        );
+        font-size: calc(#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
       }
 
       @media screen and (min-width: $max-vw) {
@@ -178,10 +190,27 @@
   }
 }
 
-@mixin prgm-languages-colors {
-  @each $lang, $hex in $prgm-languages {
+@mixin prgm-languages-colors-classes {
+
+  @each $lang,
+  $hex in $prgm-languages {
     &-#{$lang} {
       color: $hex;
+    }
+  }
+}
+
+@mixin dynamic-color-keyframes($colors, $property) {
+  #{0%} {
+    #{$property}: nth($colors, -1);
+  }
+
+  @for $i from 1 through length($colors) {
+    $percentage: $i / length($colors);
+    $keyframe: percentage($percentage);
+
+    #{$keyframe} {
+      #{$property}: nth($colors, $i);
     }
   }
 }
