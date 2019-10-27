@@ -195,7 +195,7 @@
   @each $lang,
   $hex in $prgm-languages {
     &-#{$lang} {
-      color: $hex;
+      background-color: $hex;
     }
   }
 }

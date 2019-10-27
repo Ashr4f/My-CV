@@ -7,6 +7,32 @@
   }
 }
 
+:target {
+  position: relative;
+  background-color: rgb(245, 225, 189) !important;
+  transition: background-color 0.5s ease-in-out;
+
+  &:after {
+    position: absolute;
+    content: "";
+    top: calc(100% - #{rem(30)});
+    left: 0;
+    width: 100%;
+    height: rem(30);
+  }
+
+  section,
+  &::after {
+    transition: background-color 0.5s ease-in-out;
+    transition-delay: 1s;
+    background-color: rgba($main-background-color, 1) !important;
+  }
+
+  h3 {
+    background-color: #ff3f34 !important;
+  }
+}
+
 .box-content {
   position: relative;
   margin-top: rem(54);
@@ -19,16 +45,32 @@
     }
   }
 
+  .section-container {
+    &:not(:last-of-type) {
+      padding-bottom: rem(30);
+      margin-bottom: rem(30);
+      border-bottom: 0.15rem solid rgba($black, 0.5);
+    }
+  }
+
   .title {
+    display: block;
     font-weight: 600;
     font-size: rem(18);
     text-transform: uppercase;
     padding-bottom: rem(16);
+
+    h3 {
+      display: inline-block;
+      padding: 0.2rem 0.35rem;
+      color: $white;
+      background-color: rgba($theme-color, 0.85);
+      border-radius: 6px;
+    }
   }
 
   .summary-container {
     position: relative;
-    padding-bottom: rem(60);
 
     .content {
       font-size: rem(16);
@@ -45,20 +87,30 @@
 
   .skills-container {
     position: relative;
-    padding-bottom: rem(60);
   }
 
   .programming {
+    display: inline-block;
     font-weight: 600;
+    font-size: 15px;
+    margin: 0.35rem 0;
+    padding: 0.20rem 0.35rem;
+    color: $white;
+    border-radius: 6px;
   }
 
   .lang {
     @include prgm-languages-colors-classes();
+
+    &-javascript,
+    &-react,
+    &-vuejs {
+      color: $black;
+    }
   }
 
   .history-container {
     position: relative;
-    padding-bottom: rem(28);
 
     .title {
       padding-bottom: rem(24);
@@ -85,13 +137,19 @@
         font-size: rem(14);
       }
 
-      .history-description {
-        padding: rem(16) 0;
-        padding-bottom: rem(32);
 
+      .history-description {
         p {
           font-size: rem(16);
           line-height: rem(24);
+        }
+      }
+
+      &:not(:last-of-type) {
+
+        .history-description {
+          padding: rem(16) 0;
+          padding-bottom: rem(32);
         }
       }
     }
@@ -106,6 +164,12 @@
       position: relative;
       padding-bottom: rem(24);
 
+      .portfolio-demos {
+        @media screen and (min-width: 767px) {
+          margin: 0 -1rem;
+        }
+      }
+
       .project-demo {
         position: relative;
         padding: 0 rem(16);
@@ -114,17 +178,26 @@
         @include breakpoint(xs) {
           padding: 0;
           padding-bottom: rem(32);
+
+          img {
+            min-height: rem(284) !important;
+            max-height: rem(284) !important;
+          }
         }
 
         a {
           color: $main-font-color;
           display: block;
 
+          img {
+            @include opacity(0.85);
+          }
+
           &:hover {
             color: $theme-color;
 
             img {
-              @include opacity(0.7);
+              @include opacity(1);
             }
           }
         }
@@ -145,11 +218,16 @@
 
       .project-title {
         padding-top: rem(8);
+        font-weight: 600;
       }
     }
   }
 
   .sticky-aside {
+
+    padding-bottom: rem(30);
+    margin-bottom: rem(30);
+
     @media screen and (min-width: 1000px) {
       position: sticky;
       top: rem(50);

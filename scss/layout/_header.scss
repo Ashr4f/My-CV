@@ -3,7 +3,7 @@
   display: block;
   height: rem(40);
   background-color: $theme-color;
-  animation: dynamic-background-color 100s linear infinite;
+  animation: dynamic-background-color #{length($prgm-languages) * 10}s linear infinite;
 }
 
 .title-container {
@@ -33,7 +33,7 @@
     margin-top: rem(20);
     text-transform: uppercase;
     color: rgba($theme-color, 0.7);
-    animation: dynamic-font-color 100s linear infinite;
+    animation: dynamic-font-color #{length($prgm-languages) * 10}s linear infinite;
 
     font: {
       family: $mainFont_SemiBold;
