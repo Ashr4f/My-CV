@@ -22,6 +22,7 @@
 
     font: {
       size: rem(64);
+      weight: 300;
     }
 
     @include breakpoint(xs) {
@@ -38,6 +39,7 @@
     font: {
       family: $mainFont_SemiBold;
       size: rem(22);
+      weight: 300;
     }
   }
 }
