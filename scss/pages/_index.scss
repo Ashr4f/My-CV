@@ -29,7 +29,7 @@
   }
 
   h3 {
-    background-color: #ff3f34 !important;
+    color: #ff3f34 !important;
   }
 }
 
@@ -54,7 +54,7 @@
   }
 
   .title {
-    display: block;
+    display: inline-block;
     font-weight: 600;
     font-size: rem(18);
     text-transform: uppercase;
@@ -62,9 +62,7 @@
 
     h3 {
       display: inline-block;
-      padding: 0.2rem 0.35rem;
-      color: $white;
-      background-color: rgba($theme-color, 0.85);
+      color: rgba($theme-color, 0.85);
       border-radius: 6px;
     }
   }
@@ -93,8 +91,8 @@
     display: inline-block;
     font-weight: 600;
     font-size: 15px;
-    margin: 0.35rem 0;
-    padding: 0.20rem 0.35rem;
+    margin: 0.75rem 0;
+    padding: 0.2rem 0.35rem;
     color: $white;
     border-radius: 6px;
   }
@@ -137,7 +135,6 @@
         font-size: rem(14);
       }
 
-
       .history-description {
         p {
           font-size: rem(16);
@@ -146,7 +143,6 @@
       }
 
       &:not(:last-of-type) {
-
         .history-description {
           padding: rem(16) 0;
           padding-bottom: rem(32);
@@ -224,7 +220,6 @@
   }
 
   .sticky-aside {
-
     padding-bottom: rem(30);
     margin-bottom: rem(30);
 
