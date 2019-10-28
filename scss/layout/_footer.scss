@@ -1,0 +1,40 @@
+.footer-container {
+    position: relative;
+    display: block;
+    min-height: rem(56);
+    background-color: $theme-color;
+    margin-top: rem(64);
+    animation: dynamic-background-color #{length($prgm-languages) * 10}s linear infinite;
+
+    .footer {
+        padding: 1rem;
+        text-align: center;
+
+        p {
+            display: inline-block;
+            padding: 0.5rem;
+            font-size: rem(16);
+            font-weight: 600;
+            background-color: $white;
+            border-radius: rem(4);
+
+            img {
+                width: rem(22);
+                height: auto;
+                vertical-align: sub;
+            }
+
+            .teacher {
+                display: inline-block;
+                color: rgba($theme-color, 0.85);
+                transition: color 0.35s ease-in-out;
+                font-weight: 900;
+                vertical-align: middle;
+
+                &:hover {
+                    color: #ff3f34;
+                }
+            }
+        }
+    }
+}
