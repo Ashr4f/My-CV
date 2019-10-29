@@ -1,96 +1,102 @@
 @charset "UTF-8";
 
 @font-face {
-    font-family: Montserrat_ExtraLight;
-    src: url(.././fonts/Montserrat/Montserrat-ExtraLight.ttf);
+  font-family: Montserrat_ExtraLight;
+  src: url(.././fonts/Montserrat/Montserrat-ExtraLight.ttf);
 }
 
 @font-face {
-    font-family: Montserrat_Light;
-    src: url(.././fonts/Montserrat/Montserrat-Light.ttf);
+  font-family: Montserrat_Light;
+  src: url(.././fonts/Montserrat/Montserrat-Light.ttf);
 }
 
 @font-face {
-    font-family: Montserrat_Regular;
-    src: url(.././fonts/Montserrat/Montserrat-Regular.ttf);
+  font-family: Montserrat_Regular;
+  src: url(.././fonts/Montserrat/Montserrat-Regular.ttf);
 }
 
 @font-face {
-    font-family: Montserrat_SemiBold;
-    src: url(.././fonts/Montserrat/Montserrat-SemiBold.ttf);
+  font-family: Montserrat_SemiBold;
+  src: url(.././fonts/Montserrat/Montserrat-SemiBold.ttf);
 }
 
 @font-face {
-    font-family: Montserrat_Bold;
-    src: url(.././fonts/Montserrat/Montserrat-Bold.ttf);
+  font-family: Montserrat_Bold;
+  src: url(.././fonts/Montserrat/Montserrat-Bold.ttf);
 }
 
 @font-face {
-    font-family: Acme_Regular;
-    src: url(.././fonts/Acme/Acme_Regular.ttf);
+  font-family: Acme_Regular;
+  src: url(.././fonts/Acme/Acme_Regular.ttf);
 }
 
 ::selection {
-    background-color: $theme-color;
-    color: #FFFFFF;
+  background-color: $theme-color;
+  color: #ffffff;
 }
 
 ::-moz-selection {
-    background-color: $theme-color;
-    color: #FFFFFF;
+  background-color: $theme-color;
+  color: #ffffff;
 }
 
 html {
-    scroll-behavior: smooth;
-    font-size: #{$baseFontSize}px;
+  scroll-behavior: smooth;
+  font-size: #{$baseFontSize}px;
 
-    @media screen and (min-width: 768px) {
-        @include fluid-type(768px, 1225px, 14px, 16px);
-    }
+  @media screen and (min-width: 768px) {
+    @include fluid-type(768px, 1225px, 14px, 16px);
+  }
 
-    @media screen and (max-width: 768px) {
-        @include fluid-type(1px, 768px, 12px, 16px);
-    }
+  @media screen and (max-width: 768px) {
+    @include fluid-type(1px, 768px, 12px, 16px);
+  }
 
-    @media screen and (prefers-reduced-motion: reduce) {
-        html {
-            scroll-behavior: auto;
-        }
+  @media screen and (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
     }
+  }
 }
 
 body {
-    position: relative;
-    margin: 0;
-    padding: 0;
-    font-family: $mainFont;
-    font-size: rem(16);
-    background: url("../images/dust_scratches.png");
-    color: $main-font-color;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-family: $mainFont;
+  font-size: rem(16);
+  background: url("../images/dust_scratches.png");
+  color: $main-font-color;
 }
 
 html,
 body {
-    min-height: 100%;
+  min-height: 100%;
 }
 
 input,
 a,
 i,
 button {
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    -webkit-tap-highlight-color: transparent;
-    -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
 }
 
 a {
-    text-decoration: none;
+  display: inline-block;
+  text-decoration: none;
+  color: $theme-color;
+  transition: color 0.35s ease-in-out;
+  &:hover {
+    color: #ff3f34;
+  }
 }
 
 .no-select,
 img {
-    -webkit-touch-callout: none;
-    @include prefixer(user-select, none, webkit khtml moz o ms);
+  -webkit-touch-callout: none;
+  @include prefixer(user-select, none, webkit khtml moz o ms);
 }
 
 h1,
@@ -99,44 +105,44 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 ul,
 ol,
 li {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 span,
 p,
 a {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 
-    &.bold {
-        font-family: $mainFont_Bold;
-        font-weight: 900;
-    }
+  &.bold {
+    font-family: $mainFont_Bold;
+    font-weight: 900;
+  }
 
-    &.semi-bold {
-        font-family: $mainFont_SemiBold;
-        font-weight: 600;
-    }
+  &.semi-bold {
+    font-family: $mainFont_SemiBold;
+    font-weight: 600;
+  }
 
-    &.light {
-        font-family: $mainFont_Light;
-    }
+  &.light {
+    font-family: $mainFont_Light;
+  }
 }
 
 .break-long-words {
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    -ms-word-break: break-all;
-    word-break: break-all;
-    word-break: break-word;
-    @include prefixer(hyphens, auto, webkit moz ms);
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  @include prefixer(hyphens, auto, webkit moz ms);
 }
